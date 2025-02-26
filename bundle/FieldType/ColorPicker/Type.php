@@ -4,14 +4,13 @@
 namespace Codein\eZColorPicker\FieldType\ColorPicker;
 
 use Codein\ColorConverter\ColorConverter;
-use eZ\Publish\API\Repository\Values\ContentType\FieldDefinition;
-use eZ\Publish\Core\FieldType\FieldType;
-use eZ\Publish\SPI\FieldType\Nameable;
-use eZ\Publish\SPI\FieldType\Value;
-use eZ\Publish\Core\FieldType\Value as BaseValue;
+use Ibexa\Contracts\Core\Repository\Values\ContentType\FieldDefinition;
+use Ibexa\Core\FieldType\FieldType;
+use Ibexa\Contracts\Core\FieldType\Value;
+use Ibexa\Core\FieldType\Value as BaseValue;
 use Codein\eZColorPicker\FieldType\ColorPicker\Value as ColorPickerValue;
 
-class Type extends FieldType implements Nameable
+class Type extends FieldType
 {
     /**
      * @var ColorConverter
@@ -67,7 +66,7 @@ class Type extends FieldType implements Nameable
     {
     }
 
-    public function getName(Value $value)
+    public function getName(Value $value, FieldDefinition $fieldDefinition, string $languageCode): string
     {
         return (string)$value;
     }

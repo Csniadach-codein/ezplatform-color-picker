@@ -30,7 +30,7 @@ class eZColorPickerExtensionTest extends AbstractExtensionTestCase
     {
         $this->load([]);
 
-        $actualPrependedConfig = $this->container->getExtensionConfig('ezpublish');
+        $actualPrependedConfig = $this->container->getExtensionConfig('ibexa');
         // merge multiple configs returned
         $actualPrependedConfig = array_merge(...$actualPrependedConfig);
 

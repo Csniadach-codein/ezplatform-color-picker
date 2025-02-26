@@ -5,10 +5,10 @@ namespace Codein\eZColorPicker\FieldType\ColorPicker;
 
 
 use Codein\eZColorPicker\Form\Type\ColorPickerType;
-use EzSystems\RepositoryForms\Data\Content\FieldData;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
-use EzSystems\RepositoryForms\FieldType\FieldDefinitionFormMapperInterface;
-use EzSystems\RepositoryForms\FieldType\FieldValueFormMapperInterface;
+use Ibexa\ContentForms\Data\Content\FieldData;
+use Ibexa\ContentForms\Data\FieldDefinitionData;
+use Ibexa\ContentForms\FieldType\FieldDefinitionFormMapperInterface;
+use Ibexa\ContentForms\FieldType\FieldValueFormMapperInterface;
 use Symfony\Component\Form\FormInterface;
 
 class FormMapper implements FieldValueFormMapperInterface, FieldDefinitionFormMapperInterface

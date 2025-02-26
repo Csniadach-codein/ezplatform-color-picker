@@ -3,7 +3,7 @@
 
 namespace Codein\eZColorPicker\FieldType\ColorPicker;
 
-use eZ\Publish\Core\FieldType\Value as BaseValue;
+use Ibexa\Core\FieldType\Value as BaseValue;
 
 class Value extends BaseValue
 {
